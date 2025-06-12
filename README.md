@@ -1,84 +1,78 @@
-# Transformers Notebooks
+# Transformers ノートブック
 
-This repository contains the example code from our O'Reilly book [Natural Language Processing with Transformers](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/):
+このリポジトリには、O'Reilly書籍「[Natural Language Processing with Transformers](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/)」のサンプルコードが含まれています：
 
 <img alt="book-cover" height=200 src="images/book_cover.jpg" id="book-cover"/>
 
-## Getting started
+## はじめに
 
-You can run these notebooks on cloud platforms like [Google Colab](https://colab.research.google.com/) or your local machine. Note that most chapters require a GPU to run in a reasonable amount of time, so we recommend one of the cloud platforms as they come pre-installed with CUDA.
+これらのノートブックは[Google Colab](https://colab.research.google.com/)で実行できます。ほとんどの章では適切な実行時間でGPUが必要なため、CUDAが事前にインストールされているGoogle Colabの使用を推奨します。
 
-### Running on a cloud platform
+### Google Colabでの実行
 
-To run these notebooks on a cloud platform, just click on one of the badges in the table below:
+Google Colabでこれらのノートブックを実行するには、以下の表のバッジをクリックしてください：
 
 <!--This table is automatically generated, do not fill manually!-->
 
 
 
-| Chapter                                     | Colab                                                                                                                                                                                               | Kaggle                                                                                                                                                                                                   | Gradient                                                                                                                                                                               | Studio Lab                                                                                                                                                                                                   |
-|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Introduction                                | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/01_introduction.ipynb)              | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/01_introduction.ipynb)              | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/01_introduction.ipynb)              | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/01_introduction.ipynb)              |
-| Text Classification                         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/02_classification.ipynb)            | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/02_classification.ipynb)            | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/02_classification.ipynb)            | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/02_classification.ipynb)            |
-| Transformer Anatomy                         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/03_transformer-anatomy.ipynb)       | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/03_transformer-anatomy.ipynb)       | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/03_transformer-anatomy.ipynb)       | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/03_transformer-anatomy.ipynb)       |
-| Multilingual Named Entity Recognition       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/04_multilingual-ner.ipynb)          | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/04_multilingual-ner.ipynb)          | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/04_multilingual-ner.ipynb)          | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/04_multilingual-ner.ipynb)          |
-| Text Generation                             | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/05_text-generation.ipynb)           | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/05_text-generation.ipynb)           | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/05_text-generation.ipynb)           | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/05_text-generation.ipynb)           |
-| Summarization                               | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/06_summarization.ipynb)             | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/06_summarization.ipynb)             | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/06_summarization.ipynb)             | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/06_summarization.ipynb)             |
-| Question Answering                          | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/07_question-answering.ipynb)        | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/07_question-answering.ipynb)        | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/07_question-answering.ipynb)        | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/07_question-answering.ipynb)        |
-| Making Transformers Efficient in Production | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/08_model-compression.ipynb)         | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/08_model-compression.ipynb)         | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/08_model-compression.ipynb)         | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/08_model-compression.ipynb)         |
-| Dealing with Few to No Labels               | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/09_few-to-no-labels.ipynb)          | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/09_few-to-no-labels.ipynb)          | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/09_few-to-no-labels.ipynb)          | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/09_few-to-no-labels.ipynb)          |
-| Training Transformers from Scratch          | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/10_transformers-from-scratch.ipynb) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/10_transformers-from-scratch.ipynb) | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/10_transformers-from-scratch.ipynb) | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/10_transformers-from-scratch.ipynb) |
-| Future Directions                           | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nlp-with-transformers/notebooks/blob/main/11_future-directions.ipynb)         | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/nlp-with-transformers/notebooks/blob/main/11_future-directions.ipynb)         | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/nlp-with-transformers/notebooks/blob/main/11_future-directions.ipynb)         | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/nlp-with-transformers/notebooks/blob/main/11_future-directions.ipynb)         |
+| 章                                          | Colab                                                                                                                                                                                               |
+|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| はじめに                                    | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/01_introduction.ipynb)              |
+| テキスト分類                                | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/02_classification.ipynb)            |
+| Transformerの構造                           | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/03_transformer-anatomy.ipynb)       |
+| 多言語固有表現認識                          | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/04_multilingual-ner.ipynb)          |
+| テキスト生成                                | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/05_text-generation.ipynb)           |
+| 要約                                        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/06_summarization.ipynb)             |
+| 質問応答                                    | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/07_question-answering.ipynb)        |
+| 本番環境でのTransformer効率化               | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/08_model-compression.ipynb)         |
+| 少数ラベル・無ラベル学習                    | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/09_few-to-no-labels.ipynb)          |
+| Transformerのゼロからの訓練                 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/10_transformers-from-scratch.ipynb) |
+| 将来の方向性                                | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ohtani-y/notebooks/blob/main/11_future-directions.ipynb)         |
 
 <!--End of table-->
 
-Nowadays, the GPUs on Colab tend to be K80s (which have limited memory), so we recommend using [Kaggle](https://www.kaggle.com/docs/notebooks), [Gradient](https://gradient.run/notebooks), or [SageMaker Studio Lab](https://studiolab.sagemaker.aws/). These platforms tend to provide more performant GPUs like P100s, all for free!
+> 注意: Google Colabでは、パッケージをインストールした後にランタイムを再起動する必要がある場合があります。
 
-> Note: some cloud platforms like Kaggle require you to restart the notebook after installing new packages.
+### ローカル環境での実行
 
-### Running on your machine
-
-To run the notebooks on your own machine, first clone the repository and navigate to it:
+ローカル環境でノートブックを実行するには、まずリポジトリをクローンして移動します：
 
 ```bash
-$ git clone https://github.com/nlp-with-transformers/notebooks.git
+$ git clone https://github.com/Ohtani-y/notebooks.git
 $ cd notebooks
 ```
 
-Next, run the following command to create a `conda` virtual environment that contains all the libraries needed to run the notebooks:
+次に、以下のコマンドを実行して、ノートブックの実行に必要なすべてのライブラリを含む`conda`仮想環境を作成します：
 
 ```bash
 $ conda env create -f environment.yml
 ```
 
-> Note: You'll need a GPU that supports NVIDIA's [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) to build the environment. Currently, this means you cannot build locally on Apple silicon 😢.
+> 注意: 環境を構築するには、NVIDIA の [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) をサポートするGPUが必要です。現在、これはApple siliconではローカルで構築できないことを意味します 😢。
 
-Chapter 7 (Question Answering) has a special set of dependencies, so to run that chapter you'll need a separate environment:
+第7章（質問応答）には特別な依存関係があるため、その章を実行するには別の環境が必要です：
 
 ```bash
 $ conda env create -f environment-chapter7.yml
 ```
 
-Once you've installed the dependencies, you can activate the `conda` environment and spin up the notebooks as follows:
+依存関係をインストールしたら、`conda`環境をアクティブ化してノートブックを起動できます：
 
 ```bash
-$ conda activate book # or conda activate book-chapter7
+$ conda activate book # または conda activate book-chapter7
 $ jupyter notebook
 ```
 
-## FAQ
+## よくある質問
 
-### When trying to clone the notebooks on Kaggle I get a message that I am unable to access the book's Github repository. How can I solve this issue?
+### Google Colabでノートブックを実行する際にGPUを有効にするにはどうすればよいですか？
 
-This issue is likely due to a missing internet connection. When running your first notebook on Kaggle you need to enable internet access in the settings menu on the right side. 
+Google Colabでは、「ランタイム」>「ランタイムのタイプを変更」を選択し、ハードウェアアクセラレータとしてGPUを選択することでGPUを有効にできます。
 
-### How do you select a GPU on Kaggle?
+## 引用
 
-You can enable GPU usage by selecting *GPU* as *Accelerator* in the settings menu on the right side.
-
-## Citations
-
-If you'd like to cite this book, you can use the following BibTeX entry:
+この書籍を引用したい場合は、以下のBibTeXエントリを使用できます：
 
 ```
 @book{tunstall2022natural,

@@ -1,4 +1,6 @@
-# Base requirements
-farm-haystack[colab]==1.4.0
+# 基本要件
+haystack-ai>=2.0.0b5
+sentence-transformers
 matplotlib
-datasets
+datasets>=2.0.0
+transformers>=4.21.0
